@@ -8,34 +8,27 @@ public class GS_Algo_SA {
 		GS g = new GS(new Scanner(System.in));
 		g.run();
 		g.print_pair();
-		System.out.println(g.get_error());
 	}
 
 	public static class GS {
 
 		private final int n;
 		private Rank[] m_rank_que;
-		private final int[][] m_rank;
 		private final int[][] f_rank;
 		private int[] m;
 		private int[] f;
 		private boolean flag;
-		private int err;
 
 		GS(Scanner sc){
 			this.n = Integer.parseInt(sc.nextLine());
 			this.m_rank_que = new Rank[n];
-			this.m_rank = new int[n][n];
 			this.f_rank = new int[n][n];
 			this.m = new int[n];
 			this.f = new int[n];
 			this.flag = true;
-			this.err = 0;
 			for (int i = 0; i < n; i++) {
 				m[i] = -1;
-				String line = sc.nextLine();
-				m_rank_que[i] = new Rank(line);
-				m_rank[i] = str_to_int(line);
+				m_rank_que[i] = new Rank(sc.nextLine());
 			}
 
 			for (int i = 0; i < n; i++) {
@@ -64,32 +57,12 @@ public class GS_Algo_SA {
 				}
 				if(flag) break;
 			}
-			err = error(m, f);
-		}
-		public int get_error() {
-			return err;
-		}
-		public int error(int[] a, int[] b) {
-			int e = 0;
-			for (int i = 0; i < n; i++) {
-				e += m_rank[i][m[i]];
-				e += f_rank[i][f[i]];
-			}
-			return e;
 		}
 		public void print_pair() {
 			for (int i = 0; i < n; i++) {
 				System.out.printf("(%d, %d) ",i+1 ,m[i]+1);
 				if(i != 0 && i%5 == 0) System.out.println();
 			}
-		}
-		public int[] str_to_int(String s) {
-			String[] S = s.split(" ");
-			int[] res = new int[n];
-			for (int i = 0; i <S.length ; i++) {
-				res[i] = Integer.parseInt(S[i])-1;
-			}
-			return res;
 		}
 	}
 
