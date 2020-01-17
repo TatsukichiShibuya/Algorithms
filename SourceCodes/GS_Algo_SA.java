@@ -44,14 +44,18 @@ public class GS_Algo_SA {
 				for (int j = 0; j < n; j++) {//男のj番目を考える
 					if(m[j] == -1) {
 						flag = false;
-						int best = m_rank_que[j].pollLast();
-						if(f[best] == -1) {
-							f[best] = j;
-							m[j] = best;
-						}else if(f_rank[best][j] < f_rank[best][f[best]]) {
-							m[f[best]] = -1;
-							f[best] = j;
-							m[j] = best;
+						while(true){
+							int best = m_rank_que[j].pollLast();
+							if(f[best] == -1) {
+								f[best] = j;
+								m[j] = best;
+								break;
+							}else if(f_rank[best][j] < f_rank[best][f[best]]) {
+								m[f[best]] = -1;
+								f[best] = j;
+								m[j] = best;
+								break;
+							}
 						}
 					}
 				}
