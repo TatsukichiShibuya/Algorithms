@@ -1,7 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.Scanner;
 
-public class GS_Algo_SA {
+public class GS_Algo {
 
 	public static void main(String[] args) {
 
