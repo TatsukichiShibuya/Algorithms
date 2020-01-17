@@ -1,4 +1,3 @@
-package examples;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -78,7 +77,7 @@ public class GS_Algo_SA {
 			System.out.println(err);
 		}
 
-		public void SA(int seed, int num) {//焼きなましseedはランダムのシード，numは組み替える辺の数
+		public void SA(int seed, int num) {//焼きなましseedはランダムのシード，numは組み替える辺の数(未実装)
 			Random rand = new Random(seed);
 			double T = 100;
 			ArrayList<Integer> p = new ArrayList<Integer>();
@@ -104,7 +103,7 @@ public class GS_Algo_SA {
 						break;
 					}
 				}
-				if(flag2) {//損失によって入れ替えるか決定
+				if(flag2) {
 					double before = f_rank[w1][h1]+f_rank[w2][h2]+m_rank[h1][w1]+m_rank[h2][w2];
 					double after = f_rank[w1][h2]+f_rank[w2][h1]+m_rank[h1][w2]+m_rank[h2][w1];
 					double bias = (after-before)*2/n+1;
