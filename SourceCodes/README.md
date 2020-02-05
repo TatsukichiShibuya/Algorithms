@@ -7,3 +7,5 @@
 損失は男女それぞれのペアの順位の和で定義.  
 ### FastFourierTransform.java
 FFT．再帰で書いてるので場合によってはStackOverFlowする．
+###Dijkstra.java
+普通のダイクストラ．
