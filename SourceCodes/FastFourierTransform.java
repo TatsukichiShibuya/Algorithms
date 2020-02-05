@@ -1,5 +1,3 @@
-package examples;
-
 public class FastFourierTransform {
 
 	public Complex[] dft(Complex[] f, int n, int inv) {
