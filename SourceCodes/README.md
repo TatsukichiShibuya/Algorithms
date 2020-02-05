@@ -8,4 +8,6 @@
 ### FastFourierTransform.java
 再帰で書いてるので場合によってはStackOverFlowする．  
 ### Dijkstra.java
-普通のダイクストラ．
+普通のダイクストラ．  
+### UnionFindTree.java
+集合の数とか要素数がわかるようになってる．
