@@ -1,4 +1,3 @@
-package examples;
 public class UnionFindTree {
 
 	int par[]; int rank[]; int size[]; int count;
