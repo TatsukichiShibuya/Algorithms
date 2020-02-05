@@ -1,4 +1,3 @@
-package examples;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.PriorityQueue;
@@ -47,7 +46,7 @@ class Dijkstra {
 		Edge e = new Edge(to, cost);
 		Edge e_reverse = new Edge(from, cost);
 		list[from].addEdge(e);
-		list[to].addEdge(e_reverse);//一方向なら削除
+		list[to].addEdge(e_reverse);//一方向グラフを考えるなら削除
 	}
 
 	public void delete() {
