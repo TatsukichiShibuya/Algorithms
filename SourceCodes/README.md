@@ -6,6 +6,6 @@
 焼きなまし法を使ってGSで得られた男性最良マッチングから損失を減らす安定マッチングへ(減らなくてもある確率で)更新する．  
 損失は男女それぞれのペアの順位の和で定義.  
 ### FastFourierTransform.java
-FFT．再帰で書いてるので場合によってはStackOverFlowする．
+FFT．再帰で書いてるので場合によってはStackOverFlowする．  
 ###Dijkstra.java
 普通のダイクストラ．
