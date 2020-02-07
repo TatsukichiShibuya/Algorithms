@@ -27,7 +27,7 @@ public class LazySegmentTree {//単位元，写像，eval内一か所，(update�
 	}
 	private void update(int a, int b, long x, int k, int l, int r) {
 		eval(k,l,r);
-		if(r<=1||b<=l) return;
+		if(r<=a||b<=l) return;
 		if(a<=l&&r<=b) {
 			lazy[k] = fanc_x(x,r-l);//効率悪いので基本的には都度書き換え
 			eval(k,l,r);
