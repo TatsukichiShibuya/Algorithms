@@ -42,7 +42,7 @@ public class LazySegmentTree {//単位元，写像，eval内一か所，(update�
 		return;
 	}
 	private long query(int a, int b, int k, int l, int r) {
-		if(r<=a||b<=l) return 1;
+		if(r<=a||b<=l) return e;
 		eval(k,l,r);
 		if(a<=l&&r<=b) {
 			return dat[k];
