@@ -10,4 +10,6 @@
 ### Dijkstra.java
 普通のダイクストラ．  
 ### UnionFindTree.java
-集合の数とか要素数がわかるようになってる．
+集合の数とか要素数がわかるようになってる．  
+### LazySegmentTree.java
+和積には対応してる．ほかにもいけるかも．
