@@ -1,5 +1,3 @@
-package examples;
-
 public class LazySegmentTree {//単位元，constractor内1か所，eval内3か所，update内2か所，query内1か所変更
 	int n; long[][] dat; final long e = 0;//単位元
 	public LazySegmentTree(long[] a) {
