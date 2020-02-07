@@ -1,6 +1,6 @@
 import java.util.function.BiFunction;
 
-public　class LazySegmentTree {//単位元，写像，eval内一か所，(update内一か所)書き換え
+public class LazySegmentTree {//単位元，写像，eval内一か所，(update内一か所)書き換え
 	int n; long[] dat; long[] lazy; final long e = 1;//単位元
 	final BiFunction<Long, Long, Long> fanc = (l1,l2) -> l1*l2; // 使う写像
 	public LazySegmentTree(long[] a) {
