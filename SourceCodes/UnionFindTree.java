@@ -26,7 +26,7 @@ public class UnionFindTree {
 			size[y] += size[x];
 		}else {
 			par[y] = x;
-			size[x] = size[y];
+			size[x] += size[y];
 			if(rank[x] == rank[y]) {
 				rank[x]++;
 			}
