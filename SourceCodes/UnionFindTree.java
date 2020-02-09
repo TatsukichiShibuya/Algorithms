@@ -39,7 +39,7 @@ public class UnionFindTree {
 	}
 
 	int amount(int x) {//xの属する集合の要素数
-		return size[find(x)];
+		return size[par[x]];
 	}
 
 	int count() {//集合の数
