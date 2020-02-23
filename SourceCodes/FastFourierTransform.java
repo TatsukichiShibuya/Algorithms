@@ -49,10 +49,10 @@ public class FastFourierTransform {
 			return im;
 		}
 		public Complex add(Complex c) {
-			return new Complex(re + c.re, im + c.im());
+			return new Complex(re + c.re(), im + c.im());
 		}
 		public Complex mul(Complex c) {
-			return new Complex(re*c.re - im*c.im, re*c.im + im*c.re);
+			return new Complex(re*c.re() - im*c.im(), re*c.im() + im*c.re());
 		}
 	}
 }
