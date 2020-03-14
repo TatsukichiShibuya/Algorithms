@@ -1,8 +1,8 @@
-public class UnionFindTree {
+public class UnionFind {
 
 	int par[]; int rank[]; int size[]; int count;
 
-	public UnionFindTree(int n) {
+	public UnionFind(int n) {
 		this.par = new int[n];
 		this.rank = new int[n];
 		this.size = new int[n];
