@@ -5,7 +5,7 @@ public static class BellmanFord{
     public BellmanFord(int v, int e, boolean directed){
         this.directed = directed;
         this.v = v;
-        this.e = this.directed?2*e:e;
+        this.e = this.directed?e:2*e;
         edge = new ArrayList<>(this.e);
         dist = new long[v];
         Arrays.fill(dist,INF);
