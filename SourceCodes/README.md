@@ -1,17 +1,2 @@
-### GS_Algo.java
-安定結婚問題を解く際のGale-Shapley Algorithm.  
-入力は一行目に男女の数，2-n+1行目に男女一方の順位，n+2-2n+1行目にもう一方の順位(半角スペース開ける).  
-### GS_Algo_SA.java
-上のアルゴリズムの拡張  
-焼きなまし法を使ってGSで得られた男性最良マッチングから損失を減らす安定マッチングへ(減らなくてもある確率で)更新する．  
-損失は男女それぞれのペアの順位の和で定義.  
-### FastFourierTransform.java
-再帰で書いてるので場合によってはStackOverFlowする．  
-### Dijkstra.java
-普通のダイクストラ．  
-### UnionFindTree.java
-集合の数とか要素数がわかるようになってる．  
-### LazySegmentTree.java
-~~和積には対応してる．ほかにもいけるかも．~~  
-MLEになるみたいなのでラムダは使わない方がいい．
+
 
