@@ -4,10 +4,13 @@ public static class RabinKarp{
     private long rad1, rad2; // 基数
     ArrayList<Integer> list;
 
-    public RabinKarp(String s, String t){ // 基数default
-        this.S = s.toCharArray(); this.T = t.toCharArray();
+    public RabinKarp(String s, String t, long rad1, long rad2){
+        his.S = s.toCharArray(); this.T = t.toCharArray();
         this.n = s.length(); this.m = t.length();
-        this.rad1 = 1391121; this.rad2 = 231111;
+        this.rad1 = rad1; this.rad2 = rad2;
+    }
+    public RabinKarp(String s, String t){ // 基数default
+        this(s,t,1391121,231111);
     }
     public void rabinkarp(){
         list = new ArrayList<>();
