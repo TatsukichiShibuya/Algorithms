@@ -14,6 +14,7 @@
 
 ## マッチング
 * Gale-Shapley Algorithm
+* Gale-Shapley Algorithm(焼きなまし法による改良)
 
 ## その他
 * FastFourierTransform
