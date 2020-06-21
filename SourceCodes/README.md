@@ -11,7 +11,7 @@
 
 ## 文字列
 * RabinKarp
-
+* WaveletMatrix(作成途中)
 ## マッチング
 * Gale-Shapley Algorithm
 * Gale-Shapley Algorithm(焼きなまし法による改良)
