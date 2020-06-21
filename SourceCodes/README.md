@@ -2,7 +2,18 @@
 ## グラフ
 * Dijkstra
 * BellmanFord
-* Kraskal
+* Kruskal
+* TopologicalSort
 
 ## データ構造
+* LazySegmentTree
+* UnionFind
 
+## 文字列
+* RabinKarp
+
+## マッチング
+* Gale-Shapley Algorithm
+
+## その他
+* FastFourierTransform
